@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :volunteer_jobs
   resources :volunteers
   resources :companies
   resources :jobs

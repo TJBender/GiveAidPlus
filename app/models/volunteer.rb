@@ -1,4 +1,4 @@
 class Volunteer < ApplicationRecord
-    has_many :jobs
-    has_many :companies, through: :jobs
+    has_many :volunteer_jobs
+    has_many :jobs, through: :volunteer_jobs
 end
