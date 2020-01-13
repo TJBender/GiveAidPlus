@@ -13,9 +13,11 @@ c3 = Company.create(name: "Meatballs and Burgers")
 j1 = c1.jobs.create(name: "Eat steak", hours: 8)
 j2 = c2.jobs.create(name: "Eat beef", hours: 9)
 j3 = c3.jobs.create(name: "Eat chicken?", hours: 1)
+j4 = c3.jobs.create(name: "Hard ass work", hours: 12)
 
 # Volunteer Jobs (-this is the join model between jobs and volunteers-)
 v1.jobs <<  j1
 v2.jobs <<  j2
 v3.jobs <<  j3
+v2.jobs <<  j4    
 

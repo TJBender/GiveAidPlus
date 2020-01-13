@@ -1,13 +1,13 @@
 class VolunteersController < ApplicationController
 
     def index
-        render json: Volunteer.all
+        @volunteers = Volunteer.all
+        render json: @volunteers
     end
 
     def show
         @volunteer = Volunteer.find(params[:id])
-        render json: {volunteer: @volunteer, jobs: @volunteer.jobs, volunteers: @volunteer.volunteers}
-        
+        render json: {volunteer: @volunteer, jobs: @volunteer.jobs}
     end
 
     def create
