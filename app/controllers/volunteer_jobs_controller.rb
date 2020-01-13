@@ -1,6 +1,7 @@
 class VolunteerJobsController < ApplicationController
         def index
-        render json: VolunteerJob.all
+        @volunteer_jobs = VolunteerJob.all
+        render json: @volunteer_jobs
     end
 
     def show
