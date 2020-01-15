@@ -15,6 +15,11 @@ class VolunteersController < ApplicationController
         render json: @volunteer
     end
 
+    def get_volunteer_jobs
+          
+
+    end
+
     private
 
     def volunteer_params
