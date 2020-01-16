@@ -15,6 +15,12 @@ class JobsController < ApplicationController
         render json: @job
     end
 
+    # def user_job
+    #     @job = Job.find(params[:id])
+    #     @volunteers = @job.volunteers
+    #     render json: {volunteers: @volunteers, total_hours: @volunteer_jobs.sum(:hours)}
+    # end
+
     private
 
     def job_params
