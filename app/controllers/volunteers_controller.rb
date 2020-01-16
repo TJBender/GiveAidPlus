@@ -25,7 +25,5 @@ class VolunteersController < ApplicationController
 
     def volunteer_params
         params.require(:volunteer).permit(:name, :password, :phone_number)
-        # work on this later and implement password of some sort
-        # even if its just a find_or_create_by
     end
 end

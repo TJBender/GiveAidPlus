@@ -18,7 +18,5 @@ class CompaniesController < ApplicationController
 
     def company_params
         params.require(:company).permit(:name)
-        # work on this later and implement password of some sort
-        # even if its just a find_or_create_by
     end
 end

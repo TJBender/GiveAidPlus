@@ -10,8 +10,6 @@ class VolunteerJobsController < ApplicationController
     end
 
     def create
-        # puts 'here' * 10
-        # byebug
         @volunteer_job = VolunteerJob.create(volunteer_job_params)
         render json: @volunteer_job
     end
