@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2020_01_09_210044) do
     t.integer "company_id"
     t.string "name"
     t.integer "hours"
+    t.string "company_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -33,6 +34,7 @@ ActiveRecord::Schema.define(version: 2020_01_09_210044) do
     t.bigint "volunteer_id", null: false
     t.bigint "job_id", null: false
     t.integer "hours_completed"
+    t.boolean "completed", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["job_id"], name: "index_volunteer_jobs_on_job_id"

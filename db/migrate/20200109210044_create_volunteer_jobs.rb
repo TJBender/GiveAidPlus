@@ -4,6 +4,7 @@ class CreateVolunteerJobs < ActiveRecord::Migration[6.0]
       t.references :volunteer, null: false, foreign_key: true
       t.references :job, null: false, foreign_key: true
       t.integer :hours_completed
+      t.boolean :completed, default: false
 
       t.timestamps
     end
