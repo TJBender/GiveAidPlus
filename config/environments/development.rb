@@ -13,7 +13,7 @@ Rails.application.configure do
   config.consider_all_requests_local = true
 
   # To allow requests with ngrok (do this then reset rails server)
-  config.hosts << "aff225c7.ngrok.io"
+  config.hosts << "6718b0e3.ngrok.io"
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
