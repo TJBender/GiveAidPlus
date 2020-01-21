@@ -4,6 +4,7 @@ class CreateJobs < ActiveRecord::Migration[6.0]
       t.integer :company_id
       t.string :name
       t.integer :hours
+      t.string :company_name
 
       t.timestamps
     end
